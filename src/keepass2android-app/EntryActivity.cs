@@ -1553,12 +1553,20 @@ namespace keepass2android
 		public bool GotoUrl(string urlFieldKey)
         {
             string url = _stringViews[urlFieldKey].Text;
+			var enable_cleartext = PreferenceManager.GetDefaultSharedPreferences(LocaleManager.LocalizedAppContext)
+											 .GetBoolean(
+												LocaleManager.LocalizedAppContext.GetString(Resource.String.EnableClearTextCommunication_key),
+												false);
+
+
+			string url = _stringViews[urlFieldKey].Text;
 			if (url == null) return false;
 
 			// Default https:// if no protocol specified
 			if ((!url.Contains(":") || (url.StartsWith("www."))))
 			{
-				url = "https://" + url;
+				var scheme = enable_cleartext ? "http://" : "https://";
+				url = scheme + url;
 			}
 
 			try

@@ -129,6 +129,7 @@
 	<string name="LastInfoVersionCode_key">LastInfoVersion</string>
 	
 	<string name="UseFileTransactions_key">UseFileTransactions</string>
+	<string name="EnableClearTextCommunication_key">EnableClearTextCommunication</string>
 	<string name="LockWhenScreenOff_key">LockWhenScreenOff</string>
 	<string name="LockWhenNavigateBack_key">kp2a_switch_rootedLockWhenNavigateBack</string>
   <string name="UseKp2aKeyboardInKp2a_key">UseKp2aKeyboardInKp2a</string>
