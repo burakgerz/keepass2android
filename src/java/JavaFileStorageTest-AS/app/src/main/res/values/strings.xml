@@ -238,6 +238,8 @@
   <string name="credentials_dialog_title">Enter server credentials</string>
   <string name="UseFileTransactions_title">File transactions</string>
   <string name="UseFileTransactions_summary">Use file transactions for writing databases</string>
+  <string name="EnableClearTextCommunication_title">Use Clear Text Communication</string>
+  <string name="EnableClearTextCommunication_summary">Enforce Clear Text Communication, if unsure leave unchecked</string>
 	<string name="LockWhenScreenOff_title">Lock when screen off</string>
   <string name="LockWhenScreenOff_summary">Lock the database when screen is switched off.</string>
 	<string name="UseOfflineCache_title">Database caching</string>
